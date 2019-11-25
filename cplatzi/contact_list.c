@@ -28,7 +28,7 @@ int main(int argc, const char * argv[])
 				list =  realloc(list, sizeof(CONTACT) * (listSize+1));
 			}
 			strcpy(list[listSize].name, buffer);
-			printf("Ingrese el el email de %s", buffer);
+			printf("Ingrese el el email de: %s", buffer);
 			scanf("%99s",buffer);
 			strcpy(list[listSize].email, buffer);
 			goOn=1;
@@ -42,5 +42,6 @@ int main(int argc, const char * argv[])
 	for(int i = 0; i<listSize;i++){
 		printf("%s\t\t%s\n", list[i].name, list[i].email);
 	}
+	free(list);
 	return 0;
 }
