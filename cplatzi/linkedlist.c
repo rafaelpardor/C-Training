@@ -17,7 +17,7 @@ NODE * createNode(int number)
 
 int main(int argc, const char * arg[])
 {
-	NODE * start = NULL, * current;
+	NODE * start = NULL, * current, *next;
 	char goOn;
 	int listSize=0, number;
 
@@ -47,6 +47,14 @@ int main(int argc, const char * arg[])
 		printf(current->next ? ",": "\n");
 		current = current->next;
 	}
+
+	current = start;	
+	while(current){
+		next = current->next;
+		free(current);
+		current = next;
+	}
+
 	return 0;
 }
 
