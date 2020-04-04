@@ -9,11 +9,13 @@ void main()
     upper = 300;
     step = 20;
 
+    // Fahr will be equal to 0
     fahr = lower;
-    printf("F\tC\n");
+
+    printf("F\t|\tC\n");
     while(fahr <= upper){
         celsius = 5 * (fahr-32)/9;
-        printf("%d\t%d\n", fahr, celsius);
+        printf("%d\t->\t%d\n", fahr, celsius);
         fahr = fahr + step;
     }
 }
