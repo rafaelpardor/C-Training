@@ -1,10 +1,13 @@
-#include<stdio.h>
+#include <stdio.h>
 
 int main()
 {
 	int number = 10;
-	int * pointerTonumber = &number;
+	int *pointerToNumber = &number;
 
-	printf("%p - %d.\n",pointerTonumber, *pointerTonumber);
-	return 0;	
+	printf("%d\n", number);
+	// pointerToNumber is pointer-int data type
+	printf("%d - %p.\n", *pointerToNumber, pointerToNumber);
+	printf("%p - %d.\n", *pointerToNumber, pointerToNumber);
+	return 0;
 }

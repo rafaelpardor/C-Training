@@ -1,7 +1,7 @@
-#include<stdio.h>
-#include"mylib.h"
+#include <stdio.h>
+#include "mylib.h"
 
-void hello(const char * name)
+void hello(const char *name)
 {
 	printf("Hola %s\n", name);
 }

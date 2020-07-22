@@ -1,6 +1,6 @@
-#include<stdio.h>
+#include <stdio.h>
 
-typedef char NAME[100];
+typedef char NAME[50];
 typedef int AGE;
 
 int main()

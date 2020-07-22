@@ -1,8 +1,8 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include"mylib.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include "mylib.h"
 
-int main(int argc, const char * argv[])
+int main(int argc, const char *argv[])
 {
 	hello(argv[1]);
 
